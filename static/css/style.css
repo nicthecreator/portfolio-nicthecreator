@@ -38,7 +38,15 @@ html {
 #navbar ul li a {
     text-decoration: none;
     padding: 0.5rem 0.9rem;
+    transition: 0.6s;
 
+}
+
+#navbar ul li a:hover {
+    border-radius: .9rem;
+    color: #D875AD;
+    transition: 0.4s;
+    padding: 5%.7rem;
 }
 
 .right {
@@ -52,13 +60,6 @@ html {
 #check {
     display: none;
 }
-
-.nav-col a:hover {
-    border-radius: .4rem;
-    color: #1f1f38;
-    background-color: #fff;
-}
-
 
 /* Home Section */
 .home-left,
@@ -318,7 +319,13 @@ textarea {
 #footer {
     background-color: #010101;
     padding: 1%;
-    padding-bottom: 2rem;
+}
+
+#footer ul li a:hover {
+    transition: 0.4s;
+    color: #D875AD;
+    border-radius: .4rem;
+    padding: 0%.7rem;
 }
 
 ul li {
@@ -462,6 +469,7 @@ ul li a:hover {
     border-radius: 0.4rem;
     background: transparent;
     font-family: 'Poppins', sans-serif;
+    transition: all .4s ease-in-out;
 }
 
 .buttons a,
@@ -473,6 +481,7 @@ ul li a:hover {
     color: #1f1f38;
     border-color: #fff;
     background-color: #fff;
+    transition: 0.4s;
 }
 
 .live {
