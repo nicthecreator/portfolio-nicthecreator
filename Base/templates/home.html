@@ -1,0 +1,227 @@
+{% load static%}
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Vindo ao meu Portfolio!!</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'Images/favicon.ico' %}">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}?v=5">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Nicolas Gabriel</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">Sobre mim <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Habilidades <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#Projects" class="t-white roboto">Projetos <i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#Contact" class="t-white roboto">Contato <i class="fa-solid fa-rocket"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss">Hi, I'm</h6>
+                <h1 class="t-white">Nicolas Gabriel</h1>
+                <h4 class="poppinss">Backend Developer</h4>
+                <a href="{% static 'pdf/django.pdf' %}"  target="_blank">
+                    <button class="btn poppins">Curriculo</button></a>
+                    
+                <a class="btn live poppins" id="hireme" href="https://www.linkedin.com/in/nicthecreator/"
+                    target="_blank">Vamos conversar</a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+            
+                <img src="{% static 'images/niczin.png'%}" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="t-center my-2 t-white f-2">Sobre Mim</h1>
+        <div class="about-container flex s-around ">
+            <div class=" about-left flex s-center items-center">
+                <!-- Here in src replade the given link with your secondary image link -->
+                <img src="{%static 'images/cat.png'%}" alt="" style="width: 60%;">
+            </div>
+
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins">Nicolas Gabriel</h1>
+                    <p class="t-white poppins">Meu nome é Nicolas Gabriel. Sou aluno do curso de Análise e Desenvolvimento de Sistemas na Universidade EuroAmericana em Brasília - DF. Sou apaixonado desde a infância por tecnologia e programação, e estou sempre em busca de novos desafios para aprimorar minhas habilidades. Estou no 4° Semestre, gosto de aprender novas técnicas e tecnologias que me permitam criar soluções para meus clientes.</p>
+                    <a class="btn " id="hireme"
+                        href="">Contate-me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Habilidades</h1>
+        <div class="services-container flex s-around h-50">
+        <div class=" skills-left flex s-center items-center">
+            <img src="{%static 'images/catpython.png'%}" alt="">
+        </div>
+
+        <div class="skills-right flex items-center">
+            <div class="skillss-container">
+                <div class="python bar p-relative"><span class="bar-content left t-white"> Python</span><span
+                        class="bar-content right-skills t-white">90%</span></div>
+                <div class="c bar p-relative"><span class="bar-content left t-white"> C</span><span
+                        class="bar-content right-skills t-white">70%</span></div>
+                <div class="django bar p-relative"><span class="bar-content left t-white">Django</span><span
+                        class="bar-content right-skills t-white">50%</span></div>
+                <div class="html bar p-relative"><span class="bar-content left t-white">HTML</span><span
+                        class="bar-content right-skills t-white">90%</span></div>
+                <div class="css bar p-relative"><span class="bar-content left t-white">CSS</span><span
+                        class="bar-content right-skills t-white">80%</span></div>
+                <div class="js bar p-relative"><span class="bar-content left t-white">JavaScript</span><span
+                        class="bar-content right-skills t-white">60%</span></div>
+                <div class="postgresql bar p-relative"><span class="bar-content left t-white">PostgreSQL</span><span
+                        class="bar-content right-skills t-white">40%</span></div> 
+            </div>
+        </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Projects Section -->
+    <section id="Projects">
+        <h1 class=" t-center my-2 t-white f-2">Projetos</h1>
+        <div class="projects-container flex s-center">
+            <div class="projects-item flex f-col items-center">
+                <h1 class="t-white poppins">Sistema Hoteleiro</h1>
+                <p class="t-white poppins">Este projeto consiste na estrutura de um software voltado à gestão hoteleira, desenvolvido como parte do Projeto Integrador de Programação Estruturada no Centro Universitário UNIEURO. O sistema visa integrar de forma organizada e eficiente os principais processos operacionais e administrativos de um hotel.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/nicthecreator/projeto-sistema-hoteleiro"
+                        target="_blanks" class="btn mx-1 m-top">GitHub</a>
+                    <a href="https://github.com/nicthecreator/projeto-sistema-hoteleiro" target="_blanks" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col items-center">
+                <h1 class="t-white poppins">Gerador de Senha</h1>
+                <p class="t-white poppins">Um projeto simples e eficaz em JavaScript puro para gerar senhas seguras. Inclui opções de personalização e um medidor de força de senha em tempo real, além de botões de cópia e compartilhamento.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/nicthecreator/gerador-de-senha-javascript" target="_blanks"
+                        class="btn mx-1 m-top">GitHub</a>
+                    <a href="https://nicthecreator.github.io/gerador-de-senha-javascript/" target="_blanks" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col items-center">
+                <h1 class="t-white poppins">PHD Store</h1>
+                <p class="t-white poppins">Um sistema robusto e completo desenvolvido para gerenciar produtos, controle de limites e gestão logística interna. Construído com Python e Django no back-end, e uma interface moderna utilizando JavaScript, HTML5 e CSS3 no front-end.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/nicthecreator/projeto-website-django-ecommerce"
+                        target="_blanks" class="btn mx-1 m-top">GitHub</a>
+                    <a href="https://web-production-bdd64.up.railway.app/" target="_blanks" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col items-center">
+                <h1 class="t-white poppins">Pokemon List</h1>
+                <p class="t-white poppins">Este é um projeto de estudos focado no desenvolvimento frontend básico utilizando as tecnologias HTML, CSS e JavaScript. O objetivo do projeto foi criar uma listagem interativa de Pokémon (uma Pokédex) com a funcionalidade de alternar entre o modo claro e o modo escuro (Dark/Light mode).</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/nicthecreator/project-pokemon-list"
+                        target="_blanks" class="btn mx-1 m-top">GitHub</a>
+                    <a href="https://nicthecreator.github.io/project-pokemon-list/" target="_blanks" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col items-center">
+                <h1 class="t-white poppins">Valorant Agents</h1>
+                <p class="t-white poppins">Um projeto simples de interface web desenvolvida com HTML, CSS e JavaScript que exibe informações sobre os agentes do jogo Valorant. O projeto apresenta um carrossel interativo onde é possível navegar entre os agentes e visualizar suas imagens de fundo com uma breve descrição de cada um.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/nicthecreator/project-valorant-agents-html"
+                        target="_blanks" class="btn mx-1 m-top">GitHub</a>
+                    <a href="https://nicthecreator.github.io/project-valorant-agents-html/" target="_blanks" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="Contact" class="m-b-1">
+        <h1 class=" t-center my-2 t-white f-2">Contato</h1>
+        <div class="contact-container flex s-around items-centers">
+            <div class="form" id="contactForm">
+                <form method="post" > 
+                    {% csrf_token %}
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="poppins" placeholder="Seu Nome" required>
+                    </div>
+
+                    <div class="email form-div">
+                        <input type="email" name="email" id="" class="poppins" placeholder="Seu Email"
+                            required>
+                    </div>
+
+                    <div class="phone form-div">
+                        <input type="phone" name="number" id="" class="poppins" placeholder="Seu Telefone"
+                            required>
+                    </div>
+                    
+                    <div class="textarea form-div">
+                        <textarea name="content" id="textarea" cols="30" rows="10" class="poppins"
+                            placeholder="Sua Mensagem"></textarea>
+                    </div>
+                    <button type="submit" class="btn poppins" id="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="poppinss">Home</a></li>
+            <li><a href="#about" class="poppinss">Sobre</a></li>
+            <li><a href="#skills" class="poppinss">Habilidades</a></li>
+            <li><a href="#projects" class="poppinss">Projetos</a></li>
+            <li><a href="#portfolio" class="poppinss">Portfolio</a></li>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome ">
+            <a href="https://www.linkedin.com/in/nicthecreator/" target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="https://github.com/nicthecreator" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+                <a href="https://www.instagram.com/niczcrtt?igsh=MWR2bHVwbWxuMTk4YQ==" target="_blank">
+                    <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+            
+        </ul>
+        <p class="t-center my-2 poppins">&copy; 2026 Copyright: Desenvolvido por <span class="cpy-white poppins">Nicolas Gabriel.
+                </span></p>
+
+    </footer>
+
+</body> 
+</html>
