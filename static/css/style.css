@@ -497,6 +497,42 @@ ul li a:hover {
     background-color: #2FA36A;
 }
 
+/* Responsividade (Telas Médias - Tablets e Laptops Menores) */
+@media (max-width: 1200px) {
+    .home-left, .home-right {
+        width: 50%;
+        padding: 2rem 1rem;
+    }
+    .home-right {
+        padding: 0;
+    }
+    .home-left h1 {
+        font-size: 3rem;
+    }
+    .home-left h6, h4 {
+        font-size: 3rem;
+    }
+    .home-right img {
+        width: 130%;
+        height: 130%;
+        left: -20px;
+        top: -20px;
+    }
+    .circle {
+        width: 14rem;
+        height: 14rem;
+    }
+    #skills img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-left: 0;
+    }
+    .about-right {
+        padding-right: 1rem;
+    }
+}
+
 /* Responsividade (Telas Menores) */
 @media (max-width: 850px) {
     /* Esconder a navbar completamente em celulares */
