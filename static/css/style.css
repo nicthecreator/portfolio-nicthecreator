@@ -475,7 +475,7 @@ ul li a:hover {
 }
 
 .btn {
-    margin-left: 0 .5rem;
+    margin: 0.5rem;
     font-size: 1rem;
     color: #2FA36A;
     cursor: pointer;
@@ -485,6 +485,9 @@ ul li a:hover {
     background: transparent;
     font-family: 'Poppins', sans-serif;
     transition: all .4s ease-in-out;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
 }
 
 .buttons a,
