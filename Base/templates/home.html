@@ -166,38 +166,38 @@
                         Link</a>
                 </div>
             </div>
+            <div class="projects-item flex f-col items-center">
+                <img src="{% static 'images/heartmadebyanna.gif' %}" class="project-img" alt="Valorant Agents">
+                <h1 class="t-white poppins">Heartmade By Anna</h1>
+                <p class="t-white poppins"> Feito para exibir e vender artesanatos exclusivos, com um catálogo dinâmico de produtos, galeria de imagens e integração para contato via WhatsApp. Além da vitrine para os clientes, conta com um painel administrativo seguro que permite à artesã gerenciar seu estoque de peças, cadastrar depoimentos e controlar as despesas financeiras</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/nicthecreator/heartmade-by-anna"
+                        target="_blanks" class="btn mx-1 m-top">GitHub</a>
+                    <a href="https://heartmadebyanna.com.br/" target="_blanks" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
         </div>
 
         </div>
     </section>
 
     <!-- Contact Me Section -->
-    <section id="Contact" class="m-b-1">
-        <h1 class=" t-center my-2 t-white f-2">Contato</h1>
-        <div class="contact-container flex s-around items-centers">
-            <div class="form" id="contactForm">
-                <form method="post" > 
-                    {% csrf_token %}
-                    <div class="name form-div">
-                        <input type="text" name="name" id="name" class="poppins" placeholder="Seu Nome" required>
-                    </div>
-
-                    <div class="email form-div">
-                        <input type="email" name="email" id="" class="poppins" placeholder="Seu Email"
-                            required>
-                    </div>
-
-                    <div class="phone form-div">
-                        <input type="phone" name="number" id="" class="poppins" placeholder="Seu Telefone"
-                            required>
-                    </div>
-                    
-                    <div class="textarea form-div">
-                        <textarea name="content" id="textarea" cols="30" rows="10" class="poppins"
-                            placeholder="Sua Mensagem"></textarea>
-                    </div>
-                    <button type="submit" class="btn poppins" id="submit">Send</button>
-                </form>
+    <section id="Contact" class="new-contact-section">
+        <div class="new-contact-content t-center">
+            <h1 class="contact-title">SEU PROJETO<br>MERECE SAIR DO PAPEL.</h1>
+            <p class="contact-description poppins">ENTRE EM CONTATO E VAMOS CRIAR ALGO INCRÍVEL JUNTOS.</p>
+            
+            <div class="contact-buttons flex s-center">
+                <a href="https://wa.me/5561991554949" target="_blank" class="contact-link-btn poppins">
+                    <i class="fa-brands fa-whatsapp"></i> WHATSAPP
+                </a>
+                <a href="https://www.instagram.com/niczcrtt?igsh=MWR2bHVwbWxuMTk4YQ==" target="_blank" class="contact-link-btn poppins">
+                    <i class="fa-brands fa-instagram"></i> INSTAGRAM
+                </a>
+                <a href="mailto:nicolasgabriel321@gmail.com" target="_blank" class="contact-link-btn poppins">
+                    <i class="fa-solid fa-envelope"></i> E-MAIL
+                </a>
             </div>
         </div>
     </section>
