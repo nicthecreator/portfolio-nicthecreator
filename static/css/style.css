@@ -313,24 +313,56 @@ section {
 .about-content {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.2rem;
+}
+
+.about-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.about-role {
+    color: #8eada0;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: -0.5rem;
 }
 
 .about-text {
     color: #8eada0;
     line-height: 1.8;
-    font-size: 0.98rem;
+    font-size: 0.97rem;
 }
 
 .about-text strong {
     color: #D8E6DF;
 }
 
+.about-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #8eada0;
+    font-size: 0.9rem;
+}
+
+.highlight-item i {
+    width: 1rem;
+    text-align: center;
+}
+
 .about-stats {
     display: flex;
     gap: 2rem;
-    margin: 1.5rem 0;
-    padding: 1.5rem;
+    padding: 1.2rem 1.5rem;
     background: rgba(11, 42, 26, 0.4);
     border-radius: 1rem;
     border: 1px solid rgba(47, 163, 106, 0.1);
@@ -344,14 +376,20 @@ section {
 }
 
 .stat-number {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
 .stat-label {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: #8eada0;
     text-align: center;
+}
+
+.about-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 /* =========================================

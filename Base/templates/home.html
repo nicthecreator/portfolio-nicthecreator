@@ -95,12 +95,32 @@
             </div>
             <div class="about-right flex reveal">
                 <div class="about-content">
-                    <p class="t-white poppins about-text">
-                        Meu nome é <strong class="accent">Nicolas Gabriel</strong>. Sou aluno do curso de Análise e Desenvolvimento de Sistemas na Universidade EuroAmericana em Brasília - DF. Apaixonado desde a infância por tecnologia e programação, estou sempre em busca de novos desafios para aprimorar minhas habilidades.
+                    <h3 class="about-name t-white">Nicolas Gabriel</h3>
+                    <p class="about-role poppins"><i class="fa-solid fa-code accent"></i> Backend Developer</p>
+
+                    <p class="poppins about-text">
+                        Sou apaixonado por tecnologia desde a infância e estou sempre em busca de novos desafios. Atualmente cursando <strong class="accent">Análise e Desenvolvimento de Sistemas</strong> na <strong class="accent">Universidade Católica de Brasília</strong>, aplico na prática o que aprendo em sala de aula construindo projetos reais.
                     </p>
-                    <p class="t-white poppins about-text">
-                        Atualmente no 4° semestre, gosto de aprender novas técnicas e tecnologias que me permitam criar soluções reais e impactantes para meus clientes.
-                    </p>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item poppins">
+                            <i class="fa-solid fa-graduation-cap accent"></i>
+                            <span>ADS — Universidade Católica de Brasília</span>
+                        </div>
+                        <div class="highlight-item poppins">
+                            <i class="fa-brands fa-python accent"></i>
+                            <span>Especializado em Python & Django</span>
+                        </div>
+                        <div class="highlight-item poppins">
+                            <i class="fa-solid fa-location-dot accent"></i>
+                            <span>Brasília, DF — Brasil</span>
+                        </div>
+                        <div class="highlight-item poppins">
+                            <i class="fa-solid fa-briefcase accent"></i>
+                            <span>Aberto a oportunidades</span>
+                        </div>
+                    </div>
+
                     <div class="about-stats">
                         <div class="stat-item">
                             <span class="stat-number accent">6+</span>
@@ -111,13 +131,19 @@
                             <span class="stat-label poppins">Anos codando</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number accent">4°</span>
-                            <span class="stat-label poppins">Semestre ADS</span>
+                            <span class="stat-number accent">UCB</span>
+                            <span class="stat-label poppins">Universidade</span>
                         </div>
                     </div>
-                    <a class="btn poppins" href="#Contact">
-                        <i class="fa-solid fa-envelope"></i> Contate-me
-                    </a>
+
+                    <div class="about-actions">
+                        <a class="btn poppins" href="#Contact">
+                            <i class="fa-solid fa-envelope"></i> Contate-me
+                        </a>
+                        <a class="btn live poppins" href="{% static 'pdf/curriculo.pdf' %}" target="_blank">
+                            <i class="fa-solid fa-file-arrow-down"></i> Currículo
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
