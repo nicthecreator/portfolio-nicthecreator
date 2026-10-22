@@ -388,6 +388,11 @@ section {
     color: #2FA36A;
 }
 
+/* Devicons precisam de cor forçada pois usam fill/stroke próprios */
+.devicon-django-plain.skill-icon {
+    color: #2FA36A !important;
+}
+
 .skill-name {
     font-size: 0.95rem;
     color: #D8E6DF;
